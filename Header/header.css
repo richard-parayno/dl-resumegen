@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+.SiteNavHeader {
+	height: 60px;
+	width: 1024px;
+	background-color: black;
+}*/
+
+.SiteNav ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.SiteNav ul li {
+	float: left;
+	list-style: none;
+	text-align: left;
+	margin-right: 1px;
+}
+
+.SiteNav ul li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	margin: 0px;
+}
+
+.SiteNav ul li a:hover {
+	color: white;
+}
+
+.SiteNavHeaderBreak {
+	width: 100%;
+	height: 0;
+	margin-bottom: 2px solid #99cc66;
+	
+}
+
+.SiteNavHeader h3{
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.SiteNav {
+	background-color: #99cc66;
+	height: 50px;
+}
+
