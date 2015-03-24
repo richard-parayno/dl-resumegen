@@ -45,7 +45,7 @@
           		<ul class="nav navbar-nav">
           			<li class="active"><a href="#">Generate Resume</a></li>
           			<li><a href="#">Help </a></li>
-          			<li ><a href="#">About</a></li>
+          			<li ><a href="../generateresume/about.html">About</a></li>
           			<li ><a href="#">Account</a></li>
           		</ul>
 
@@ -70,43 +70,42 @@
 
 		<ul class="nav nav-tabs" role="tablist">
 	    		<li role="presentation" class="active">
-	    			<a href="#basicInfo" aria-controls="basicInfo" role="tab" data-toggle="tab">Basic Information</a>
+	    			<a href="#basicInfo" aria-controls="basicInfo" aria-expanded="true" role="tab" data-toggle="tab">Basic Information</a>
 	    		</li>
 	    		<li role="presentation">
-	    			<a href="#education" aria-controls="basicInfo" role="tab" data-toggle="tab">Education</a>
+	    			<a href="#educInfo" aria-controls="educInfo" aria-expanded="false" role="tab" data-toggle="tab">Education</a>
 	    		</li>
 	    		<li role="presentation">
-	    			<a href="#" aria-controls="basicInfo" role="tab" data-toggle="tab">Work Experience</a>
+	    			<a href="#workExperience" aria-controls="workExperience" aria-expanded="false" role="tab" data-toggle="tab">Work Experience</a>
 	    		</li>
 	    		<li role="presentation">
-	    			<a href="#" aria-controls="basicInfo" role="tab" data-toggle="tab">Co-Curriculars</a>
+	    			<a href="#coCurricular" aria-controls="coCurricular" aria-expanded="false" role="tab" data-toggle="tab">Co-Curriculars</a>
 	    		</li>
 	    		<li role="presentation">
-	    			<a href="#" aria-controls="basicInfo" role="tab" data-toggle="tab">Seminars Attended</a>
+	    			<a href="#semAttend" aria-controls="semAttend" aria-expanded="false" role="tab" data-toggle="tab">Seminars Attended</a>
 	    		</li>
 
 	    		<li role="presentation">
-	    			<a href="#" aria-controls="basicInfo" role="tab" data-toggle="tab">Seminars Conducted</a>
+	    			<a href="#semConduct" aria-controls="semConduct" aria-expanded="false" role="tab" data-toggle="tab">Seminars Conducted</a>
 	    		</li>
 
 	    		<li role="presentation">
-	    			<a href="#" aria-controls="basicInfo" role="tab" data-toggle="tab">Research Papers</a>
+	    			<a href="#researchPaper" aria-controls="researchPaper" aria-expanded="false" role="tab" data-toggle="tab">Research Papers</a>
 	    		</li>
-
-	    		<!--li role="presentation">
-	    			<a href="#" aria-controls="basicInfo" role="tab" data-toggle="tab">Personal Background</a>
-	    		</li-->
 
 	    		<li role="presentation">
-	    			<a href="#" aria-controls="basicInfo" role="tab" data-toggle="tab">References</a>
+	    			<a href="#personalBackground" aria-controls="personalBackground" aria-expanded="false" role="tab" data-toggle="tab">Personal Background</a>
 	    		</li>
 
-    		</ul>
+	    		<li role="presentation">
+	    			<a href="#reference" aria-controls="reference" aria-expanded="false" role="tab" data-toggle="tab">References</a>
+	    		</li>
+    	</ul>
 
 		<div class="container" background= "src/city.jpg">
     		
 			<div class="tab-content">
-			<div class="row tab-pane fade in active" id="basicInfo">
+			<div role="tabpanel" class="row tab-pane fade in active" id="basicInfo">
 				<div class="col-lg-6" >
 					<h1>Basic Information</h1>
 					<h2 class="subtitle"><b>Enter your basic information so we can get started.</b></h2>
@@ -135,49 +134,292 @@
 							<!--<label for="EmailAddress">E-Mail Address</label>-->
 							<input type = "email" class="form-control" placeholder="E-Mail Address"/>	
 						</div>
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "generateresume-2.html" style = "color: white">Next Step</a></button>
-					  <!--div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-					  </div-->
-					  <!--
-					   <button type="button" class="btn btn-theme" data-toggle="modal" data-target="#signin" >Sign In</button>
-					  <button type="button" class="btn btn-theme" data-toggle="modal" data-target="#signup" >Sign Up</button>
-					  -->
-
-
-					</form>					
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#educInfo" style = "color: white">Next Step</a></button>			
 				</div>
-
-				<!--div class="col-lg-4 col-lg-offset-2">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					  <ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					  </ol>					
-					  <!-- slides -->
-					  <!--div class="carousel-inner">
-						<div class="item active">
-						  <img src="assets/img/slide1.png" alt="">
+			</div>
+			<div role="tabpanel" class="row tab-pane fade" id="educInfo">
+				<div class="col-lg-6">
+					<h1>Educational Background</h1>
+					<h2 class="subtitle"><b>Please enter your educational background.</b></h2>
+					<!-- Year of Graduation -->
+						<div class = "form-group">
+							<!--<label for="FirstName">First Name</label>-->
+							<input type = "text" class="form-control" placeholder="Year of Graduation"/>	
 						</div>
-						<div class="item">
-						  <img src="assets/img/slide2.png" alt="">
+					<!-- School -->
+						<div class = "form-group">
+							<!--<label for="Address">Address</label>-->
+							<input type = "text" class="form-control" placeholder="School"/>	
+						</div>	
+					<!-- Awards -->
+						<div class = "form-group">
+							<!--<label for="TelephoneNumber">Telephone Number</label>-->
+							<input type = "text" class="form-control" placeholder="Awards"/>	
 						</div>
-						<div class="item">
-						  <img src="assets/img/slide3.png" alt="">
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>
+				</div>	
+			</div>			
+			
+			<div role="tabpanel" class="row tab-pane fade" id="workExperience">
+				<div class="col-lg-6">
+					<h1>Work Experience</h1>
+					<h2 class="subtitle"><b>Please enter your work experience.</b></h2>
+					<!-- Duration of Employment -->
+						<div class = "form-group">
+							<!--<label for="FirstName">First Name</label>-->
+							<input type = "text" class="form-control" placeholder="Duration of Employment"/>	
 						</div>
-					  </div>
-					</div>		
-				</div-->
+					<!-- Position -->
+						<div class = "form-group">
+							<!--<label for="Address">Address</label>-->
+							<input type = "text" class="form-control" placeholder="Position"/>	
+						</div>	
+					<!-- Company -->
+						<div class = "form-group">
+							<!--<label for="TelephoneNumber">Telephone Number</label>-->
+							<input type = "text" class="form-control" placeholder="Company"/>	
+						</div>
+					<!-- Description of Work -->
+						<div class = "form-group">
+							<!--<label for="TelephoneNumber">Telephone Number</label>-->
+							<input type = "text" class="form-control" placeholder="Description of Work"/>	
+						</div>	
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button> 				
+				</div>
 			</div>
 
+			<div role="tabpanel" class="row tab-pane fade" id="coCurricular">
+				<div class="col-lg-6">
+					<h1>Co-Curricular Activities</h1>
+					<h2 class="subtitle"><b>Please enter your co-curricular activities.</b></h2>
+					<!-- Year -->
+						<div class = "form-group">
+							<!--<label for="FirstName">First Name</label>-->
+							<input type = "text" class="form-control" placeholder="Year"/>	
+						</div>
+					<!-- Position -->
+						<div class = "form-group">
+							<!--<label for="Address">Address</label>-->
+							<input type = "text" class="form-control" placeholder="Position"/>	
+						</div>	
+					<!-- Organiation -->
+						<div class = "form-group">
+							<!--<label for="TelephoneNumber">Telephone Number</label>-->
+							<input type = "text" class="form-control" placeholder="Organization"/>	
+						</div>
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>				
+				</div>
+			</div>
 
+			<div role="tabpanel" class="row tab-pane fade" id="semAttend">
+				<div class="col-lg-6">
+					<h1>Seminars Attended</h1>
+					<h2 class="subtitle"><b>Please enter the seminars you have attended.</b></h2>
+					<!-- Date -->
+						<div class = "form-group">
+							<!--<label for="FirstName">First Name</label>-->
+							<input type = "text" class="form-control" placeholder="Date"/>	
+						</div>
+					<!-- Seminar Name -->
+						<div class = "form-group">
+							<!--<label for="Address">Address</label>-->
+							<input type = "text" class="form-control" placeholder="Seminar Name"/>	
+						</div>	
+					<!-- Sponsoring Organization -->
+						<div class = "form-group">
+							<!--<label for="TelephoneNumber">Telephone Number</label>-->
+							<input type = "text" class="form-control" placeholder="Sponsoring Organization"/>	
+						</div>
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>				
+				</div>
+			</div>
 
+			<div role="tabpanel" class="row tab-pane fade" id="semConduct">
+				<div class="col-lg-6">
+					<h1>Seminars Conducted(Optional)</h1>
+					<!-- Dates -->
+						<div class = "form-group">
+						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
+						<div class = "row">
+							<div class = "col-xs-5">
+								<select class="form-control" placeholder="Month">
+									<option>January</option>
+									<option>February</option>
+									<option>March</option>
+									<option>April</option>
+									<option>May</option>
+									<option>June</option>
+									<option>July</option>	
+									<option>August</option>
+									<option>September</option>
+									<option>October</option>
+									<option>November</option>
+									<option>December</option>
+								</select>
+							</div>
+						
+							<div class = "col-xs-3">
+								<input type = "text" class="form-control" placeholder="Day"/>	
+							</div>
+							<div class = "col-xs-4">
+								<input type = "text" class="form-control" placeholder="Year"/>
+							</div>	
+						</div>
+						</div>
+
+						</div>
+					<!-- Position -->
+						<div class = "form-group">
+							
+							<input type = "text" class="form-control" placeholder="Position"/>	
+						</div>	
+					<!-- Seminar Name -->
+						<div class = "form-group">
+							
+							<input type = "text" class="form-control" placeholder="Seminar Name"/>	
+						</div>
+					<!-- Sponsoring Org -->
+						<div class = "form-group">
+							
+							<input type = "text" class="form-control" placeholder="Sponsoring Organization, Location"/>	
+						</div>
+					
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white"> Next Step </a></button>	  				
+				</div>
+			</div>
+
+			<div role="tabpanel" class="row tab-pane fade" id="researchPaper">
+				<div class="col-lg-6">
+					<h1>Research Papers Prepared</h1>
+						<div class = "form-group">
+					
+						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
+						<div class = "row">
+							<div class = "col-xs-5">
+								<select class="form-control" placeholder="Month">
+									<option>January</option>
+									<option>February</option>
+									<option>March</option>
+									<option>April</option>
+									<option>May</option>
+									<option>June</option>
+									<option>July</option>	
+									<option>August</option>
+									<option>September</option>
+									<option>October</option>
+									<option>November</option>
+									<option>December</option>
+								</select>
+							</div>
+						
+							<div class = "col-xs-4">
+								<input type = "text" class="form-control" placeholder="Year"/>
+							</div>	
+						</div>
+						</div>
+
+						</div>
+					
+						<div class = "form-group">
+							
+							<input type = "text" class="form-control" placeholder="Title"/>	
+						</div>	
+					
+						<div class = "form-group">
+							
+							<input type = "text" class="form-control" placeholder="Description"/>	
+						</div>
+
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>
+					 		
+				</div>
+			</div>
+
+			<div role="tabpanel" class="row tab-pane fade" id="personalBackground">
+				<div class="col-lg-6">
+					<h1>Personal Background</h1>		
+						<div class = "form-group">
 			
-		</div>
-		</div>
-	</div>
+						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
+						<div class = "row">
+							<div class = "col-xs-5">
+								<select class="form-control" placeholder="Month">
+									<option>January</option>
+									<option>February</option>
+									<option>March</option>
+									<option>April</option>
+									<option>May</option>
+									<option>June</option>
+									<option>July</option>	
+									<option>August</option>
+									<option>September</option>
+									<option>October</option>
+									<option>November</option>
+									<option>December</option>
+								</select>
+							</div>
+						
+							<div class = "col-xs-3">
+								<input type = "text" class="form-control" placeholder="Day"/>
+							</div>	
 
+							<div class = "col-xs-4">
+								<input type = "text" class="form-control" placeholder="Year"/>
+							</div>	
+						</div>
+						</div>
+
+						</div>
+					
+						<div class = "form-group">	
+							<input type = "text" class="form-control" placeholder="Place of Birth"/>	
+						</div>	
+					
+						<div class = "form-group">
+							<input type = "text" class="form-control" placeholder="Languages-Skills-Talents-Qualities"/>	
+						</div>
+						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>			
+				</div>
+			</div>
+
+			<div role="tabpanel" class="row tab-pane fade" id="reference">
+				<div class="col-lg-6">
+					<h1>References</h1>
+					
+					<div class = "form-group">
+					<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
+					<div class = "row">	
+						<div class = "col-xs-3">
+							<input type = "text" class="form-control" placeholder="Name"/>
+						</div>	
+
+						<div class = "col-xs-4">
+							<input type = "text" class="form-control" placeholder="Position"/>
+						</div>	
+
+						<div class = "col-xs-5">
+							<input type = "text" class="form-control" placeholder="Contact Details"/>
+						</div>	
+					</div>
+					</div>
+
+					</div>
+					
+					<div class = "form-group">
+						<input type = "text" class="form-control" placeholder="Place of Birth"/>	
+					</div>	
+					
+					<div class = "form-group">
+						<input type = "text" class="form-control" placeholder="Languages-Skills-Talents-Qualities"/>	
+					</div>
+							
+					<button type="submit" value = "submit" class="btn btn-theme">Finish</button>
+								
+				</div>
+			</div>
+
+		</div>
+		</div>
 
 	<div id="footer">
 	<div class="container">
@@ -189,6 +431,15 @@
 	</div>	
 	</div>
 
+	<script>
+  	$(function () {
+    	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  		e.target // newly activated tab
+  		e.relatedTarget // previous active tab
+		})
+	})
+  	
+	</script>
 	
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
