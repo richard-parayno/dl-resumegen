@@ -99,8 +99,8 @@
 	    			<a href="#reference" aria-controls="reference" aria-expanded="false" role="tab" data-toggle="tab">References</a>
 	    		</li>
     	</ul>
-
-		<div class="container" background= "src/city.jpg">
+    	
+		<div class="container">
     		
 			<div class="tab-content">
 			<div role="tabpanel" class="row tab-pane fade in active" id="basicInfo">
@@ -127,7 +127,8 @@
 						<div class = "form-group">
 							<input type = "email" class="form-control" placeholder="E-Mail Address"/>	
 						</div>
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#educInfo" style = "color: white">Next Step</a></button>			
+						
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button>	
 				</div>
 			</div>
 			<div role="tabpanel" class="row tab-pane fade" id="educInfo">
@@ -146,7 +147,7 @@
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Awards"/>	
 						</div>
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button>
 				</div>	
 			</div>			
 			
@@ -170,7 +171,7 @@
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Description of Work"/>	
 						</div>	
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button> 				
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button> 				
 				</div>
 			</div>
 
@@ -190,7 +191,7 @@
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Organization"/>	
 						</div>
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>				
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button>				
 				</div>
 			</div>
 
@@ -210,7 +211,7 @@
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Sponsoring Organization"/>	
 						</div>
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>				
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button>				
 				</div>
 			</div>
 
@@ -264,7 +265,7 @@
 							<input type = "text" class="form-control" placeholder="Sponsoring Organization, Location"/>	
 						</div>
 					
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white"> Next Step </a></button>	  				
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white"> Next Step </a></button>	  				
 				</div>
 			</div>
 
@@ -310,7 +311,7 @@
 							<input type = "text" class="form-control" placeholder="Description"/>	
 						</div>
 
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button>
 					 		
 				</div>
 			</div>
@@ -358,7 +359,7 @@
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Languages-Skills-Talents-Qualities"/>	
 						</div>
-						<button type="submit" value = "submit" class="btn btn-theme"><a href = "#" style = "color: white">Next Step</a></button>			
+						<button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button>			
 				</div>
 			</div>
 
@@ -400,7 +401,7 @@
 
 		</div>
 		</div>
-
+	</div>
 	<div id="footer">
 	<div class="container">
 		<div class="row">
@@ -421,6 +422,12 @@
   	
 	</script>
 	
+	<script>	
+	$('#nextStep').click(function(){
+  		$('.nav-tabs > .active').next('li').find('a').trigger('click');	
+	});
+	</script>
+
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
     <!--script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
