@@ -2,7 +2,7 @@
 
 
 #header {	
-	background-color: #66da00 !important;
+	background-color: #198315 !important;
 	background: url(#) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 150px;
@@ -24,7 +24,17 @@
 
 #header_body
 {
-	background-color: white !important;
+	background-color: rgba(255,255,255,1) !important;
+	padding: 2px;
+	padding-top: 5px;
+}
+
+#header_body a
+{
+	color: #77ab59 !important;
+	
+	font-weight: 500;
+
 }
 
 h1, h2, h3, h4, h5, h6
