@@ -1,10 +1,6 @@
 <?php
-$firstName = $_POST["first_name"];
-$lastName = $_POST["last_name"];
-$birthDay = $_POST["birth_day"];
-$college = $_POST["college"];
-$email = $_POST["email"];
-$passWord = $_POST["password"];
+$address = $_POST["address"];
+
 $mysql_date_now = date("Y-m-d H:i:s");
 
 $connect = mysql_connect("localhost:3306", "root", "root"); 
