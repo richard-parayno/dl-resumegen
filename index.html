@@ -119,7 +119,10 @@
 						<!-- FirstName Signup -->
 						<div class = "form-group">
 							<div class="col-sm-12">
-								<input type = "text" class="form-control" placeholder="First Name"/>	
+								<!--<input type = "text" class="form-control" placeholder="First Name"/>	-->
+								<form action="php/userReg.php" method="post">
+									<input type = "text" class="form-control" placeholder="First Name" name="first_name"/>
+								</form>
 							</div>
 						</div>
 
@@ -135,7 +138,10 @@
 						<!-- LastName Signup -->
 						<div class = "form-group">
 							<div class="col-sm-12">
-								<input type = "text" class="form-control" placeholder="Last Name"/>	
+								<!--<input type = "text" class="form-control" placeholder="Last Name"/>	-->
+								<form action="php/userReg.php" method="post">
+									<input type = "text" class="form-control" placeholder="Last Name" name="last_name"/>
+								</form>
 							</div>
 						</div>
 
@@ -168,7 +174,7 @@
 				</div>
 
 
-						<!-- Courses -->
+						<!-- Courses
 						<div class = "form-group">
 							<div class="col-sm-12">
 								<select class="form-control" placeholder="Full Name">
@@ -184,28 +190,42 @@
 								</select>
 							</div>
 							</div>
+						-->
 
+						<div class="form-group">
+							<div class="col-sm-12">
+								<form action="php/userReg.php" method="post">
+									<input type = "text" class="form-control" placeholder="College" name="college"/>
+								</form>
+							</div>
+						</div>
 							<!-- Email -->
 						<div class = "form-group">
 							<div class="col-sm-12">
-								<input type = "email" class="form-control" placeholder="Username"/>	
+								<!--<input type = "email" class="form-control" placeholder="E-Mail"/>	-->
+								<form action="php/userReg.php" method="post">
+									<input type = "text" class="form-control" placeholder="E-Mail" name="email"/>
+								</form>
 							</div>
 						</div>
 
 							<!-- password -->
 						<div class = "form-group">
 							<div class="col-sm-12">
-								<input type = "password" class="form-control" placeholder="Password"/>
+								<!--<input type = "password" class="form-control" placeholder="Password"/>-->
+								<form action="php/userReg.php" method="post">
+									<input type = "text" class="form-control" placeholder="Password" name="password"/>
+								</form>
 							</div>
 						</div>
 
-						<!-- re-enter password -->
+						<!-- re-enter password
 						<div class = "form-group">
 							<div class="col-sm-12">
 								<input type = "password" class="form-control" placeholder="Re-enter Password"/>
 							</div>
 						</div>
-
+						-->
 						
 
 					</form>
@@ -235,7 +255,7 @@
 
 						<div class = "form-group">
 							<div class="col-sm-12">
-								<input type = "text" class="form-control" placeholder="Username"/>	
+								<input type = "text" class="form-control" placeholder="E-mail"/>	
 							</div>
 						</div>
 						<div class = "form-group">
