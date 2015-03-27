@@ -47,11 +47,12 @@ h1, h2, h3, h4, h5, h6
 .dropdown-menu > li > a:focus 
 {
 	background-color: rgba(12,117, 18, 1) !important;
-=======
+}
+
 #header_body a:hover, #header_body a:focus
 {
 	background-color: rgba(12,117, 18, 0.9);
->>>>>>> origin/master
+
 	color: white !important;
 
 }
