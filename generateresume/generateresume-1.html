@@ -129,57 +129,63 @@
 		<div class="container" >
     		
 		<div class="tab-content">
+
 			<div role="tabpanel" class="row tab-pane fade in active" id="basicInfo">
 				<div class="col-lg-6" >
 					<h1>Basic Information</h1>
+					<form action="php/gr-basicInfo.php" method="post">
 					<h2 class="subtitle"><b>Enter your basic information so we can get started.</b></h2>
 					
 					<!-- Address -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Address"/>	
+							<input type = "text" class="form-control" placeholder="Address" name="address"/>	
 						</div>	
 					<!-- Telephone Number -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Telephone Number"/>	
+							<input type = "text" class="form-control" placeholder="Telephone Number" name="telephone_number"/>	
 						</div>
 					<!-- Mobile Number -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Mobile Number"/>	
+							<input type = "text" class="form-control" placeholder="Mobile Number" name="mobile_number"/>	
 						</div>
 					<!-- E-Mail Address -->
 						<div class = "form-group">
-							<input type = "email" class="form-control" placeholder="E-Mail Address"/>	
+							<input type = "email" class="form-control" placeholder="E-Mail Address" name="email"/>	
 						</div>
-						
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button-->	
+					<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+					</form>
 				</div>
 			</div>
 			<div role="tabpanel" class="row tab-pane fade" id="educInfo">
 				<div class="col-lg-6">
 					<h1>Educational Background</h1>
+					<form action="php/gr-educInfo.php" method="post">
 					<h2 class="subtitle"><b>Please enter your educational background.</b></h2>
 					<!-- Year of Graduation -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Year of Graduation"/>	
+							<input type = "text" class="form-control" placeholder="Year of Graduation" name="year_of_graduation"/>	
 						</div>
 					<!-- School -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="School"/>	
+							<input type = "text" class="form-control" placeholder="School" name="school"/>	
 						</div>	
 					<!-- Awards -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Awards"/>	
+							<input type = "text" class="form-control" placeholder="Awards" name="awards"/>	
 						</div>
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button-->
+						<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+					</form>
 				</div>	
 			</div>			
 			
 			<div role="tabpanel" class="row tab-pane fade" id="workExperience">
 				<div class="col-lg-6">
 					<h1>Work Experience</h1>
+					<form action="php/gr-workExperience.php" method="post">
 					<h2 class="subtitle"><b>Please enter your work experience.</b></h2>
 					<!-- Duration of Employment -->
 						<div class = "form-group">
+<<<<<<< HEAD
 						<div class="row">
 							<div class="col-xs-6">
 							<input type = "text" class="form-control" placeholder="Date/Year Started"/>
@@ -189,60 +195,72 @@
 							<input type="text" class="form-control" placeholder="Date/Year Ended"/>	
 							</div>
 						</div>
+=======
+							<input type = "text" class="form-control" placeholder="Date/Year Started" name="date_started"/>	
+						</div>
+
+						<div class = "form-group">
+							<input type="text" class="form-control" placeholder="Date/Year Ended" name="date_ended"/>
+>>>>>>> origin/master
 						</div>
 					<!-- Position -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Position"/>	
+							<input type = "text" class="form-control" placeholder="Position" name="position"/>	
 						</div>	
 					<!-- Company -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Company"/>	
+							<input type = "text" class="form-control" placeholder="Company" name="company"/>	
 						</div>
 					<!-- Description of Work -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Description of Work"/>	
+							<input type = "text" class="form-control" placeholder="Description of Work" name="work_description"/>	
 						</div>	
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button--> 				
+					<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+					</form>
 				</div>
 			</div>
 
 			<div role="tabpanel" class="row tab-pane fade" id="coCurricular">
 				<div class="col-lg-6">
 					<h1>Co-Curricular Activities</h1>
+					<form action="php/gr-coCurricular.php" method="post">
 					<h2 class="subtitle"><b>Please enter your co-curricular activities.</b></h2>
 					<!-- Year -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Year"/>	
+							<input type = "text" class="form-control" placeholder="Year" name="year"/>	
 						</div>
 					<!-- Position -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Position"/>	
+							<input type = "text" class="form-control" placeholder="Position" name="position"/>	
 						</div>	
 					<!-- Organiation -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Organization"/>	
+							<input type = "text" class="form-control" placeholder="Organization" name="organization"/>	
 						</div>
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button-->				
+					<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+					</form>			
 				</div>
 			</div>
 
 			<div role="tabpanel" class="row tab-pane fade" id="semAttend">
 				<div class="col-lg-6">
 					<h1>Seminars Attended</h1>
+					<form action="php/gr-semAttend.php" method="post">
 					<h2 class="subtitle"><b>Please enter the seminars you have attended.</b></h2>
 					<!-- Date -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Date"/>	
+							<input type = "text" class="form-control" placeholder="Date" name="date"/>	
 						</div>
 					<!-- Seminar Name -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Seminar Name"/>	
+							<input type = "text" class="form-control" placeholder="Seminar Name" name="seminar_name"/>	
 						</div>	
 					<!-- Sponsoring Organization -->
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Sponsoring Organization"/>	
+							<input type = "text" class="form-control" placeholder="Sponsoring Organization" name="sponsor_organization"/>	
 						</div>
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button!-->				
+					<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+					</form>			
 				</div>
 			</div>
 
@@ -250,11 +268,13 @@
 				<div class="col-lg-6">
 					<h1>Seminars Conducted</h1>
 					<!-- Dates -->
+					<form action="php/gr-semConduct.php" method="post">
 						<div class = "form-group">
 						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
 						<div class = "row">
+						
 							<div class = "col-xs-5">
-								<select class="form-control" placeholder="Month">
+								<select class="form-control" placeholder="Month" name="month"/>
 									<option>January</option>
 									<option>February</option>
 									<option>March</option>
@@ -271,11 +291,12 @@
 							</div>
 						
 							<div class = "col-xs-3">
-								<input type = "text" class="form-control" placeholder="Day"/>	
+								<input type = "text" class="form-control" placeholder="Day" name="day"/>	
 							</div>
 							<div class = "col-xs-4">
-								<input type = "text" class="form-control" placeholder="Year"/>
+								<input type = "text" class="form-control" placeholder="Year" name="year"/>
 							</div>	
+							
 						</div>
 						</div>
 
@@ -283,32 +304,34 @@
 					<!-- Position -->
 						<div class = "form-group">
 							
-							<input type = "text" class="form-control" placeholder="Position"/>	
+							<input type = "text" class="form-control" placeholder="Position" name="position"/>	
 						</div>	
 					<!-- Seminar Name -->
 						<div class = "form-group">
 							
-							<input type = "text" class="form-control" placeholder="Seminar Name"/>	
+							<input type = "text" class="form-control" placeholder="Seminar Name" name="seminar_name"/>	
 						</div>
 					<!-- Sponsoring Org -->
 						<div class = "form-group">
 							
-							<input type = "text" class="form-control" placeholder="Sponsoring Organization, Location"/>	
+							<input type = "text" class="form-control" placeholder="Sponsoring Organization" name="sponsor_organization"/>	
 						</div>
 					
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white"> Next Step </a></button-->	  				
+						<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+						</form>  				
 				</div>
 			</div>
 
 			<div role="tabpanel" class="row tab-pane fade" id="researchPaper">
 				<div class="col-lg-6">
 					<h1>Research Papers Prepared</h1>
+					<form action="php/gr-resPrep.php" method="post">
 						<div class = "form-group">
 					
 						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
 						<div class = "row">
 							<div class = "col-xs-5">
-								<select class="form-control" placeholder="Month">
+								<select class="form-control" placeholder="Month" name="month'">
 									<option>January</option>
 									<option>February</option>
 									<option>March</option>
@@ -325,7 +348,7 @@
 							</div>
 						
 							<div class = "col-xs-4">
-								<input type = "text" class="form-control" placeholder="Year"/>
+								<input type = "text" class="form-control" placeholder="Year" name="year"/>
 							</div>	
 						</div>
 						</div>
@@ -333,29 +356,29 @@
 						</div>
 					
 						<div class = "form-group">
-							
-							<input type = "text" class="form-control" placeholder="Title"/>	
+							<input type = "text" class="form-control" placeholder="Title" name="title"/>	
 						</div>	
 					
 						<div class = "form-group">
-							
-							<input type = "text" class="form-control" placeholder="Description"/>	
+							<input type = "text" class="form-control" placeholder="Description" name="description"/>	
 						</div>
 
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button-->
+						<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+						</form>
 					 		
 				</div>
 			</div>
 
 			<div role="tabpanel" class="row tab-pane fade" id="personalBackground">
 				<div class="col-lg-6">
-					<h1>Personal Background</h1>		
+					<h1>Personal Background</h1>	
+					<form action="php/gr-persBackground.php" method="post">	
 						<div class = "form-group">
 			
 						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
 						<div class = "row">
 							<div class = "col-xs-5">
-								<select class="form-control" placeholder="Month">
+								<select class="form-control" placeholder="Month" name="month">
 									<option>January</option>
 									<option>February</option>
 									<option>March</option>
@@ -372,11 +395,11 @@
 							</div>
 						
 							<div class = "col-xs-3">
-								<input type = "text" class="form-control" placeholder="Day"/>
+								<input type = "text" class="form-control" placeholder="Day" name="day"/>
 							</div>	
 
 							<div class = "col-xs-4">
-								<input type = "text" class="form-control" placeholder="Year"/>
+								<input type = "text" class="form-control" placeholder="Year" name="year"/>
 							</div>	
 						</div>
 						</div>
@@ -384,19 +407,21 @@
 						</div>
 					
 						<div class = "form-group">	
-							<input type = "text" class="form-control" placeholder="Place of Birth"/>	
+							<input type = "text" class="form-control" placeholder="Place of Birth" name="place_of_birth"/>	
 						</div>	
 					
 						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="Languages-Skills-Talents-Qualities"/>	
+							<input type = "text" class="form-control" placeholder="Languages-Skills-Talents-Qualities" name="extra_info"/>	
 						</div>
-						<!--button type="submit" value = "submit" class="btn btn-theme" id="nextStep"><a href = "#" style = "color: white">Next Step</a></button-->			
+						<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>		
+					</form>	
 				</div>
 			</div>
 
 			<div role="tabpanel" class="row tab-pane fade" id="reference">
 				<div class="col-lg-6">
 					<h1>References</h1>
+<<<<<<< HEAD
 					
 					<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
 					
@@ -418,6 +443,34 @@
 
 					<button type="submit" value = "submit" class="btn btn-theme">Finish</button>
 								
+=======
+					<form action="php/gr-references.php" method="post">
+					<div class = "form-group">
+					<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
+					<div class = "row">	
+						<div class = "col-xs-3">
+							<input type = "text" class="form-control" placeholder="Name" name="name"/>
+						</div>	
+
+						<div class = "col-xs-4">
+							<input type = "text" class="form-control" placeholder="Position" name="position" />
+						</div>	
+
+						<div class = "col-xs-5">
+							<input type = "text" class="form-control" placeholder="Contact Details" name="contact_details"/>
+						</div>	
+					</div>
+					</div>
+
+					</div>
+					
+					<div class = "form-group">
+						<input type = "text" class="form-control" placeholder="Languages-Skills-Talents-Qualities" name="extra_info"/>	
+					</div>
+							
+					<button type="submit" value = "submit" class="btn btn-theme">Submit</button>
+					</form>			
+
 				</div>
 			</div>
 
