@@ -42,10 +42,25 @@ h1, h2, h3, h4, h5, h6
 	color: white !important;
 }
 
-#header_body a:hover, .dropdown-menu > li > a:hover,
+#header_body a:hover,
+.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus 
 {
-	background-color: rgba(12,117, 18, 0.9) !important;
+	background-color: rgba(12,117, 18, 1) !important;
 	color: white !important;
 
+}
+
+.nav-tabs {
+  border-bottom: 1px solid green;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid green;
+  border-bottom-color: transparent;
 }
