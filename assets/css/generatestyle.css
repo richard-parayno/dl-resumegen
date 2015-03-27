@@ -2,7 +2,7 @@
 
 
 #header {	
-	background-color: #198315 !important;
+	background-color: #0c7512 !important;
 	background: url(#) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 150px;
@@ -24,14 +24,14 @@
 
 #header_body
 {
-	background-color: rgba(255,255,255,1) !important;
+	background-color: white !important;
 	padding: 2px;
 	padding-top: 5px;
 }
 
 #header_body a
 {
-	color: #77ab59 !important;
+	color: #0e5d1c !important;
 	
 	font-weight: 500;
 
@@ -42,7 +42,10 @@ h1, h2, h3, h4, h5, h6
 	color: white !important;
 }
 
-nav
+#header_body a:hover, .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus 
 {
+	background-color: rgba(12,117, 18, 0.9) !important;
+	color: white !important;
 
 }
