@@ -1,0 +1,101 @@
+/*generate resume style */
+
+
+#header {	
+	background-color: #0c7512 !important;
+	background: url(../img/bg.png)  center top;
+	
+	margin-top: -80px;
+	padding-top: 150px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header_body
+{
+	background-color: rgba(255,255,255,0) !important;
+	height: 10%;
+	margin-top: -20px;
+	padding: 2px;
+	padding-top: 30px;
+}
+
+#header_body a
+{
+	/*color: white !important;*/
+	
+	font-weight: 500;
+
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: white !important;
+}
+
+#header_body a:hover,
+.dropdown-menu > li > a:hover,
+{
+	background-color: rgba(12,117, 18, 1) !important;
+}
+
+#header_body a:hover
+{
+	background-color: rgba(12,117, 18, 0.9);
+
+	color: rgb(214, 238, 24) !important;
+
+}
+
+.nav-tabs {
+  border-bottom: 1px solid rgb(214, 238, 24);
+}
+
+.dropdown-menu > .active > a, 
+.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a:focus
+{
+	background-color: rgba(12,117, 18, 0.9) !important;
+	
+	background-image: none;
+	border-bottom-color: transparent;
+
+
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+{
+	background-color: rgba(12,117, 18, 0.9) !important;
+	color: white;
+	background-image: none;
+}
+
+.nav-tabs>li>a:hover
+{
+	border-color: rgb(214, 238, 24);
+	border-bottom-color: transparent;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus
+{
+	color: rgb(214, 238, 24);
+
+  	cursor: default;
+  	background-color: transparent;
+  	border: 1px solid rgb(214, 238, 24);
+  	border-bottom-color: transparent;
+}
