@@ -2,9 +2,9 @@
 
 
 #header {	
-	background-color: #444;
-	background: url(#) no-repeat center top;*/
-	margin-top: -20px;
+	background-color: #66da00 !important;
+	background: url(#) no-repeat center top;
+	margin-top: -70px;
 	padding-top: 150px;
 	background-attachment: relative;
 	background-position: center center;
@@ -20,4 +20,14 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: white !important;
+}
+
+nav
+{
+
 }
