@@ -17,7 +17,7 @@
 	<link href="../assets/css/bootstrap-theme.css" rel="stylesheet">
 
     <!-- simple style -->
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/c">
+    <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/genstyle.css" rel="stylesheet" type="text/css">
 
 
@@ -45,7 +45,7 @@
           <div class="collapse navbar-collapse">
           		<ul class="nav navbar-nav">
           			<li class="active"><a href="#">Generate Resume</a></li>
-          			<li><a href="#">Help </a></li>
+          			<li><a href="help.html">Help </a></li>
           			<li ><a href="../generateresume/about.html">About</a></li>
           			<li ><a href="#">Account</a></li>
           		</ul>
@@ -137,8 +137,11 @@
 				<div class="col-lg-6" >
 					<h1>Basic Information</h1>
 					<h2 class="subtitle"><b>Enter your basic information so we can get started.</b></h2>
+
 					<form id="basicInfo" action="../php/gr-basicInfo.php" method="post">
-						<!-- Address -->
+			
+					<!-- Address -->
+
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Address" name="address"/>	
 						</div>	
@@ -187,11 +190,13 @@
 					<h2 class="subtitle"><b>Please enter your work experience.</b></h2>
 					<!-- Duration of Employment -->
 						<div class = "form-group">
+
 							<input type = "text" class="form-control" placeholder="Date/Year Started" name="date_started"/>	
 						</div>
 
 						<div class = "form-group">
 							<input type="text" class="form-control" placeholder="Date/Year Ended" name="date_ended"/>
+
 						</div>
 					<!-- Position -->
 						<div class = "form-group">
@@ -416,6 +421,7 @@
 				<div class="col-lg-6">
 					<h1>References</h1>
 					<form action="../php/gr-references.php" method="post">
+
 					<div class = "form-group">
 					<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
 					<div class = "row">	
@@ -441,6 +447,7 @@
 							
 					<button type="submit" value = "submit" class="btn btn-theme">Submit</button>
 					</form>			
+
 				</div>
 			</div>
 

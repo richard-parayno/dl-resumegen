@@ -183,11 +183,16 @@ h2.subtitle {
 
 /* footer */
 #footer {
-	background: #99cc66;
+	background-color: #9cff7f; 
+	/*background: url(../img/footer_wrapper_background.png);*/
 	padding: 20px 0 5px;
+	border-top: 1px solid #0e5d1c;
+
+
 }
 
 p.copyright {
-	color: #fff;
+	color: green;
+	font-weight: 400;
 	text-align: center;
 }	
