@@ -7,7 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../assets/img/favicon.png">
+    <script src="../jquery-1.11.2.js"></script>
 
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
     <title>DLSU Resume Generator</title>
 
     <!-- Bootstrap -->
@@ -17,6 +19,7 @@
     <!-- simple style -->
     <link href="../assets/css/style.css" rel="stylesheet" type="text/c">
     <link href="../assets/css/genstyle.css" rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -67,24 +70,24 @@
 		<div class="container">
 		<ul class="nav nav-tabs" role="tablist">
 	    		<li role="presentation" class="active">
-	    			<a href="#basicInfo" aria-controls="basicInfo" aria-expanded="true" role="tab" data-toggle="tab">Basic Information</a>
+	    			<a href="#basicInfo" aria-controls="basicInfo" aria-expanded="true" role="tab" data-toggle = "tab">Basic Information</a>
 	    		</li>
 	    		<li role="presentation">
-	    			<a href="#educInfo" aria-controls="educInfo" aria-expanded="false" role="tab" data-toggle="tab">Education</a>
+	    			<a href="#educInfo" aria-controls="educInfo" aria-expanded="false" role="tab"  data-toggle = "tab">Education</a>
 	    		</li>
 	    		
 	    		<li role="presentation">
-	    			<a href="#coCurricular" aria-controls="coCurricular" aria-expanded="false" role="tab" data-toggle="tab">Co-Curricular Activities</a>
+	    			<a href="#coCurricular" aria-controls="coCurricular" aria-expanded="false" role="tab"  data-toggle = "tab">Co-Curricular Activities</a>
 	    		</li>
 
 	    		<li class="dropdown" role="presentation">
-	    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Seminars <span class="caret"></span></a>
+	    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"  data-toggle = "tab">Seminars <span class="caret"></span></a>
 	    			<ul class="dropdown-menu" role="menu">
-	    				<li><a href="#semAttend" aria-controls="semAttend" aria-expanded="false" role="tab" data-toggle="tab">Seminars Attended</a>
+	    				<li><a href="#semAttend" aria-controls="semAttend" aria-expanded="false" role="tab"  data-toggle = "tab">Seminars Attended</a>
 	    				</li>
 
 	    				<li>
-	    				<a href="#semConduct" aria-controls="semConduct" aria-expanded="false" role="tab" data-toggle="tab">Seminars Conducted</a>
+	    				<a href="#semConduct" aria-controls="semConduct" aria-expanded="false" role="tab"  data-toggle = "tab">Seminars Conducted</a>
 	    				</li>
 	    			</ul>
 	    		</li>
@@ -94,15 +97,15 @@
 
 	    			<ul class="dropdown-menu" role="menu">
 	    				<li role="presentation">
-	    				<a href="#reference" aria-controls="reference" aria-expanded="false" role="tab" data-toggle="tab">References</a>
+	    				<a href="#reference" aria-controls="reference" aria-expanded="false" role="tab" data-toggle= "tab">References</a>
 	    				</li>
 
 	    				<li role="presentation">
-	    				<a href="#researchPaper" aria-controls="researchPaper" aria-expanded="false" role="tab" data-toggle="tab">Research Papers</a>
+	    				<a href="#researchPaper" aria-controls="researchPaper" aria-expanded="false" role="tab" data-toggle= "tab">Research Papers</a>
 	    				</li>
 
 	    				<li role="presentation">
-	    				<a href="#workExperience" aria-controls="workExperience" aria-expanded="false" role="tab" data-toggle="tab">Work Experience</a>
+	    				<a href="#workExperience" aria-controls="workExperience" aria-expanded="false" role="tab" data-toggle= "tab">Work Experience</a>
 	    				</li>
 
 
@@ -111,12 +114,12 @@
 	    		</li>
 
 	    		<li role="presentation">
-	    			<a href="#personalBackground" aria-controls="personalBackground" aria-expanded="false" role="tab" data-toggle="tab">Personal Background</a>
+	    			<a href="#personalBackground" aria-controls="personalBackground" aria-expanded="false" role="tab" data-toggle= "tab" >Personal Background</a>
 	    		</li>	
 
 
 		    		<li role="presentation" class="navbar-right">
-		    			<a href="#" aria-controls="generate" aria-expanded="false" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>    Generate</button>
+		    			<a href="#" aria-controls="generate" aria-expanded="false" role="tab" ><span class="glyphicon glyphicon-file"></span>    Generate</button>
 		    		</li>
 		    	
     		</div>
@@ -133,36 +136,32 @@
 			<div role="tabpanel" class="row tab-pane fade in active" id="basicInfo">
 				<div class="col-lg-6" >
 					<h1>Basic Information</h1>
-					<form action="php/gr-basicInfo.php" method="post">
 					<h2 class="subtitle"><b>Enter your basic information so we can get started.</b></h2>
-					<!-- First Name >
-						<div class = "form-group">
-							<input type = "text" class="form-control" placeholder="First Name"/>	
-						</div-->
-					<!-- Address -->
+					<form id="basicInfo" action="../php/gr-basicInfo.php" method="post">
+						<!-- Address -->
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Address" name="address"/>	
 						</div>	
-					<!-- Telephone Number -->
+						<!-- Telephone Number -->
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Telephone Number" name="telephone_number"/>	
 						</div>
-					<!-- Mobile Number -->
+											<!-- Mobile Number -->
 						<div class = "form-group">
 							<input type = "text" class="form-control" placeholder="Mobile Number" name="mobile_number"/>	
 						</div>
-					<!-- E-Mail Address -->
+						<!-- E-Mail Address -->
 						<div class = "form-group">
 							<input type = "email" class="form-control" placeholder="E-Mail Address" name="email"/>	
 						</div>
-					<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
+						<input type="submit">
 					</form>
 				</div>
 			</div>
 			<div role="tabpanel" class="row tab-pane fade" id="educInfo">
 				<div class="col-lg-6">
 					<h1>Educational Background</h1>
-					<form action="php/gr-educInfo.php" method="post">
+					<form action="../php/gr-educInfo.php" method="post">
 					<h2 class="subtitle"><b>Please enter your educational background.</b></h2>
 					<!-- Year of Graduation -->
 						<div class = "form-group">
@@ -184,7 +183,7 @@
 			<div role="tabpanel" class="row tab-pane fade" id="workExperience">
 				<div class="col-lg-6">
 					<h1>Work Experience</h1>
-					<form action="php/gr-workExperience.php" method="post">
+					<form action="../php/gr-workExperience.php" method="post">
 					<h2 class="subtitle"><b>Please enter your work experience.</b></h2>
 					<!-- Duration of Employment -->
 						<div class = "form-group">
@@ -214,7 +213,7 @@
 			<div role="tabpanel" class="row tab-pane fade" id="coCurricular">
 				<div class="col-lg-6">
 					<h1>Co-Curricular Activities</h1>
-					<form action="php/gr-coCurricular.php" method="post">
+					<form action="../php/gr-coCurricular.php" method="post">
 					<h2 class="subtitle"><b>Please enter your co-curricular activities.</b></h2>
 					<!-- Year -->
 						<div class = "form-group">
@@ -236,7 +235,7 @@
 			<div role="tabpanel" class="row tab-pane fade" id="semAttend">
 				<div class="col-lg-6">
 					<h1>Seminars Attended</h1>
-					<form action="php/gr-semAttend.php" method="post">
+					<form action="../php/gr-semAttend.php" method="post">
 					<h2 class="subtitle"><b>Please enter the seminars you have attended.</b></h2>
 					<!-- Date -->
 						<div class = "form-group">
@@ -259,11 +258,11 @@
 				<div class="col-lg-6">
 					<h1>Seminars Conducted</h1>
 					<!-- Dates -->
-					<form action="php/gr-semConduct.php" method="post">
+					<form action="../php/gr-semConduct.php" method="post">
 						<div class = "form-group">
 						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
 						<div class = "row">
-						
+						<!--
 							<div class = "col-xs-5">
 								<select class="form-control" placeholder="Month" name="month"/>
 									<option>January</option>
@@ -281,16 +280,20 @@
 								</select>
 							</div>
 						
+
 							<div class = "col-xs-3">
 								<input type = "text" class="form-control" placeholder="Day" name="day"/>	
 							</div>
 							<div class = "col-xs-4">
 								<input type = "text" class="form-control" placeholder="Year" name="year"/>
 							</div>	
-							
+							-->
 						</div>
 						</div>
 
+						</div>
+						<div class = "form-group">
+							<input type = "text" class="form-control" placeholder="Date" name="date"/>	
 						</div>
 					<!-- Position -->
 						<div class = "form-group">
@@ -309,14 +312,14 @@
 						</div>
 					
 						<button type="submit" value = "send" class="btn btn-theme" id="submit">Submit</button>
-						</form>  				
+					</form>  				
 				</div>
 			</div>
 
 			<div role="tabpanel" class="row tab-pane fade" id="researchPaper">
 				<div class="col-lg-6">
 					<h1>Research Papers Prepared</h1>
-					<form action="php/gr-resPrep.php" method="post">
+					<form action="../php/gr-resPrep.php" method="post">
 						<div class = "form-group">
 					
 						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
@@ -363,7 +366,7 @@
 			<div role="tabpanel" class="row tab-pane fade" id="personalBackground">
 				<div class="col-lg-6">
 					<h1>Personal Background</h1>	
-					<form action="php/gr-persBackground.php" method="post">	
+					<form action="../php/gr-persBackground.php" method="post">	
 						<div class = "form-group">
 			
 						<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
@@ -412,7 +415,7 @@
 			<div role="tabpanel" class="row tab-pane fade" id="reference">
 				<div class="col-lg-6">
 					<h1>References</h1>
-					<form action="php/gr-references.php" method="post">
+					<form action="../php/gr-references.php" method="post">
 					<div class = "form-group">
 					<div class = "form-group" style = "margin-left: 0; margin-right: 0;">
 					<div class = "row">	
@@ -455,25 +458,11 @@
 	</div>	
 	</div>
 
-	<script>
-  	$(function () {
-    	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  		e.target // newly activated tab
-  		e.relatedTarget // previous active tab
-		})
-	})
-  	
-	</script>
-	
-	<script>	
-	$('#nextStep').click(function(){
-  		$('.nav-tabs > .active').next('li').find('a').trigger('click');	
+  	<!--<script>
+	$('#nextStep').focus(){
+  		$('.nav-tabs > .active').next('li').find('a').triggerHandler("focus");	
 	});
-	</script>
-
-    <script src="../jquery-1.11.2.js"></script>
-    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
-    <!--script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	</script>-->
     <!--assets/js/bootstrap.min.js-->
 
 

@@ -8,7 +8,7 @@ $mysql_date_now = date("Y-m-d H:i:s");
 
 $connect = mysql_connect("localhost:3306", "root", "root"); 
 mysql_select_db("userdata", $connect);
-$user_info = "INSERT INTO ResumeGenerator-BasicInfo (create_date, address, telephone_number, mobile_number, email) VALUES ('$mysql_date_now' ,'$address', '$telephone_number','$mobile_number', '$email')"; 
+$user_info = "INSERT INTO ResumeGeneratorBasicInfo (create_date, address, telephone_number, mobile_number) VALUES ('$mysql_date_now' ,'$address', '$telephone_number','$mobile_number')"; 
 
 mysql_query($user_info, $connect);
 

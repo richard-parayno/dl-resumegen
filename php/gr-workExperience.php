@@ -10,7 +10,7 @@ $mysql_date_now = date("Y-m-d H:i:s");
 
 $connect = mysql_connect("localhost:3306", "root", "root"); 
 mysql_select_db("userdata", $connect);
-$user_info = "INSERT INTO ResumeGenerator-WorkExp (create_date, date_started, date_ended, position, company, work_description) VALUES ('$mysql_date_now' ,'$dateStarted', '$dateEnded','$position', '$company', '$workDescription')"; 
+$user_info = "INSERT INTO ResumeGeneratorWorkExp (create_date, date_started, date_ended, position, company, work_description) VALUES ('$mysql_date_now' ,'$dateStarted', '$dateEnded','$position', '$company', '$workDescription')"; 
 
 mysql_query($user_info, $connect);
 
