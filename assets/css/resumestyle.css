@@ -1,0 +1,36 @@
+#page
+{
+	padding: 96px;
+	font-size: 18px;
+}
+
+.needsBold
+{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.needsUp
+{
+	text-transform: uppercase;
+}
+
+.needsLeft
+{
+	text-align: left;
+	padding: 0;
+}
+
+#addr
+{
+	width: 300px;
+}
+
+#box
+{
+	border: 1px solid black;
+	height: 192px;
+	width: 192px;
+	text-align: center;
+	padding-top: 50px;
+}
